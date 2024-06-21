@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Bookshelf</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Bookshelf</h1>
+        <form action="">
+            <input type="text" name="cari" id="cari-buku"
+                placeholder="Cari buku berdasarkan Judul, Penulis, dan Tahun terbit">
+        </form>
+    </header>
+
+    <main>
+        <section class="left-content">
+            <div class="info">
+                <div class="profile">
+                    <img class="avatar"
+                        src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1718852549~exp=1718853149~hmac=af32553d81cce9d243d9d703550a8c347694b9864fbc6c0e911a4a17d4961acf"
+                        alt="Avatar">
+                    <div class="user-profile">
+
+                        <h3 class="username">Hi, User</h3>
+                        <a href="" class="edit-username"><img src="img/icon-edit.png" alt="Edit"></a>
+                    </div>
+                </div>
+
+                <div class="books-info">
+                    <div class="all-books-count">
+                        <h4>Jumlah Buku</h4>
+                        <p class="all-book">0</p>
+                    </div>
+
+                    <div class="incomplete-books-count">
+                        <h4>Belum Dibaca</h4>
+                        <p class="incomplete-book">0</p>
+                    </div>
+                    <div class="completed-books-count">
+                        <h4>Sudah Dibaca</h4>
+                        <p class="complete-book">0</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-wraper">
+                <div class="form-header">
+                    <h4>Tambah Buku</h4>
+                </div>
+                <form id="form-add-book">
+                    <div class="input">
+                        <label for="input-title">Judul Buku</label>
+                        <input type="text" id="input-title" required>
+                    </div>
+                    <div class="input">
+                        <label for="input-author">Penulis</label>
+                        <input type="text" id="input-author" required>
+                    </div>
+                    <div class="input">
+                        <label for="input-year">Tahun terbit</label>
+                        <input type="number" id="input-year" required>
+                    </div>
+                    <div class="input-inline">
+                        <label for="input-isComplete-checker">
+                            <input type="checkbox" id="input-isComplete-checker">
+                            Selesai Dibaca
+                        </label>
+                        <button type="submit" class="btn-submit-new-book">Tambah</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="right-content">
+            <div class="book-list-wrapper">
+                <div class="book-list-header">
+                    <h4>Belum Dibaca</h4>
+                </div>
+                <div id="book-list-incomplete" class="book-list">
+
+                </div>
+
+            </div>
+            <div class="book-list-wrapper">
+                <div class="book-list-header">
+                    <h4>Selesai Dibaca</h4>
+                </div>
+                <div id="book-list-complete" class="book-list">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>2024&copy;Andry Aditama</h3>
+    </footer>
+
+    <div class="reset">
+        <img src="img/icon-reset.png" alt="Reset">
+    </div>
+
+    <div class="to-top">
+        <img src="img/icon-top.png" alt="To Top">
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
